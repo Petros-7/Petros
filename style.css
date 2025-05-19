@@ -1,5 +1,8 @@
+body{
+background: black;
+}
+
 h1{
   font-size:128px;
   line-height: 0,25;
 }
-background: black;
