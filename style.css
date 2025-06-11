@@ -9,7 +9,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Center content vertically */
   min-height: 100vh; /* Full viewport height */
   box-sizing: border-box;
 }
@@ -17,11 +17,13 @@ html, body {
 h1 {
   font-size: 128px;
   line-height: 0.25;
-  margin: 20px 0;
+  margin: 20px auto; /* Center heading */
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
   letter-spacing: 3px;
+  max-width: 80%; /* Limit heading width */
+  text-align: center;
 }
 
 img {
@@ -42,6 +44,7 @@ p {
   font-size: 1.25rem;
   text-align: center;
   line-height: 1.6;
-  margin: 0 15px 40px 15px;
+  margin: 0 auto 40px auto; /* Center paragraph */
   color: #ddd; /* Light gray color for paragraph text */
 }
+
