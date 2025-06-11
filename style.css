@@ -10,7 +10,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Align content from top */
-  padding-top: 40px; /* Add breathing space from top */
+  padding-top: 20px; /* Reduced breathing space from top */
   min-height: 100vh; /* Full viewport height */
   box-sizing: border-box;
 }
@@ -18,7 +18,7 @@ html, body {
 h1 {
   font-size: 128px;
   line-height: 1;
-  margin: 20px auto 20px auto; /* Reduced bottom margin to 20px */
+  margin: 20px auto 20px auto; /* Bottom margin 20px */
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
