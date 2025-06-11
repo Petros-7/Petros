@@ -18,7 +18,7 @@ html, body {
 h1 {
   font-size: 128px;
   line-height: 1;
-  margin: 20px auto 40px auto; /* Reduced bottom margin to 40px */
+  margin: 20px auto 20px auto; /* Reduced bottom margin to 20px */
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
