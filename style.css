@@ -12,12 +12,13 @@ html, body {
   justify-content: flex-start; /* Align content from top */
   min-height: 100vh; /* Full viewport height */
   box-sizing: border-box;
+  padding-top: 0; /* Removed padding at top */
 }
 
 h1 {
   font-size: 128px;
   line-height: 1;
-  margin: 8px auto 20px auto; /* Reduced top margin to 8px, bottom margin 20px */
+  margin: 0 auto 20px auto; /* Removed top margin to bring title closer to top */
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
@@ -47,4 +48,3 @@ p {
   margin: 0 auto 40px auto; /* Center paragraph */
   color: #ddd; /* Light gray color for paragraph text */
 }
-
