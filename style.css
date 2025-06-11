@@ -17,8 +17,8 @@ html, body {
 
 h1 {
   font-size: 128px;
-  line-height: 1; /* Increased line-height for proper vertical spacing */
-  margin: 20px auto 80px auto; /* Increased bottom margin to separate from image */
+  line-height: 1;
+  margin: 20px auto 40px auto; /* Reduced bottom margin to 40px */
   font-weight: bold;
   text-transform: uppercase;
   user-select: none;
