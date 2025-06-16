@@ -48,27 +48,26 @@ p {
   color: #ddd; /* Light gray color for paragraph text */
 }
 
-/* Add Button Style */
+/* Add Button Style with Image Background */
 .add-button {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  border: none; /* No border */
-  padding: 15px 32px; /* Padding for the button */
-  text-align: center; /* Center text */
-  text-decoration: none; /* No underline */
-  display: inline-block; /* Inline block for layout */
-  font-size: 16px; /* Font size */
-  margin: 20px 0; /* Margin for spacing */
-  cursor: pointer; /* Pointer cursor on hover */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
-  user-select: none; /* Prevent text selection */
+  width: 160px; /* Set width equal or based on image */
+  height: 60px; /* Set height equal or based on image */
+  background-image: url('imageedit_1_9547236832.png');
+  background-size: contain; /* Cover button area proportionally */
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 0; /* no padding, image fully displayed */
+  outline: none;
+  user-select: none;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .add-button:hover {
-  background-color: #45a049; /* Darker green on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 /* Responsive adjustments */
@@ -80,9 +79,8 @@ p {
     font-size: 1rem; /* Smaller paragraph text on mobile */
   }
   .add-button {
-    width: 80%;
-    padding: 15px 0;
-    font-size: 18px;
+    width: 120px;
+    height: 45px;
   }
 }
 
