@@ -6,7 +6,6 @@
   <meta name="description" content="Petros - vážený bojovník v Larpu" />
   <meta name="keywords" content="Petros, Larp, bojovník, kapitalista" />
   <title>Petros</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     /* Reset some default styles */
     html, body {
@@ -58,25 +57,29 @@
       color: #ddd; /* Light gray color for paragraph text */
     }
 
+    /* Add Button Style with image background, no visible text */
     .add-button {
-      background-color: #4CAF50; /* Green background */
-      color: white; /* White text */
-      border: none; /* No border */
-      padding: 15px 32px; /* Padding for the button */
-      text-align: center; /* Center text */
-      text-decoration: none; /* No underline */
-      display: inline-block; /* Inline block for layout */
-      font-size: 16px; /* Font size */
-      margin: 20px 0; /* Margin for spacing */
-      cursor: pointer; /* Pointer cursor on hover */
-      border-radius: 5px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+      width: 160px;
+      height: 60px;
+      background-image: url('imageedit_1_9547236832.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+      margin: 20px 0 40px 0;
+      padding: 0;
+      outline: none;
+      user-select: none;
+      display: block;
+      transition: transform 0.3s ease;
+      background-color: transparent;
+      font-size: 0; /* Hide any text */
+      line-height: 0;
     }
 
     .add-button:hover {
-      background-color: #45a049; /* Darker green on hover */
-      transform: scale(1.05); /* Slightly enlarge on hover */
+      transform: scale(1.05);
     }
 
     /* Responsive adjustments */
@@ -87,6 +90,10 @@
       p {
         font-size: 1rem; /* Smaller paragraph text on mobile */
       }
+      .add-button {
+        width: 120px;
+        height: 45px;
+      }
     }
   </style>
 </head>
@@ -95,7 +102,8 @@
     <h1>Petros</h1>
     <img src="IMG-20240416-WA0035.jpg" alt="Udatný Petros v boji s damenem" width="900" height="600" />
     <p>Petros je vážený bojovník v Larpu a měl by dostat pěněžní bonus ze začátku, jelikož je to velký a urputný kapitalista.</p>
-    <button class="add-button">Add</button>
+    <button class="add-button" aria-label="Add"></button>
   </main>
 </body>
 </html>
+
