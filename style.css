@@ -12,7 +12,6 @@ html, body {
   justify-content: flex-start; /* Align content from top */
   min-height: 100vh; /* Full viewport height */
   box-sizing: border-box;
-  padding-top: 0; /* Removed padding at top */
 }
 
 h1 {
@@ -48,3 +47,42 @@ p {
   margin: 0 auto 40px auto; /* Center paragraph */
   color: #ddd; /* Light gray color for paragraph text */
 }
+
+/* Add Button Style */
+.add-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 15px 32px; /* Padding for the button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block for layout */
+  font-size: 16px; /* Font size */
+  margin: 20px 0; /* Margin for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+  user-select: none; /* Prevent text selection */
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 64px; /* Smaller heading on mobile */
+  }
+  p {
+    font-size: 1rem; /* Smaller paragraph text on mobile */
+  }
+  .add-button {
+    width: 80%;
+    padding: 15px 0;
+    font-size: 18px;
+  }
+}
+
