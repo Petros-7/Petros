@@ -7,13 +7,95 @@
   <meta name="keywords" content="Petros, Larp, bojovník, kapitalista" />
   <title>Petros</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset some default styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black; /* Set background color to black */
+      color: white; /* Set text color to white for contrast */
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Align content from top */
+      min-height: 100vh; /* Full viewport height */
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 128px;
+      line-height: 1;
+      margin: 0 auto 20px auto; /* Removed top margin to bring title closer to top */
+      font-weight: bold;
+      text-transform: uppercase;
+      user-select: none;
+      letter-spacing: 3px;
+      max-width: 80%; /* Limit heading width */
+      text-align: center;
+    }
+
+    img {
+      max-width: 90vw; /* Responsive image width */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+      margin-bottom: 60px; /* Spacing below image */
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05); /* Scale image on hover */
+    }
+
+    p {
+      max-width: 900px;
+      font-size: 1.25rem;
+      text-align: center;
+      line-height: 1.6;
+      margin: 0 auto 40px auto; /* Center paragraph */
+      color: #ddd; /* Light gray color for paragraph text */
+    }
+
+    .add-button {
+      background-color: #4CAF50; /* Green background */
+      color: white; /* White text */
+      border: none; /* No border */
+      padding: 15px 32px; /* Padding for the button */
+      text-align: center; /* Center text */
+      text-decoration: none; /* No underline */
+      display: inline-block; /* Inline block for layout */
+      font-size: 16px; /* Font size */
+      margin: 20px 0; /* Margin for spacing */
+      cursor: pointer; /* Pointer cursor on hover */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+    }
+
+    .add-button:hover {
+      background-color: #45a049; /* Darker green on hover */
+      transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 64px; /* Smaller heading on mobile */
+      }
+      p {
+        font-size: 1rem; /* Smaller paragraph text on mobile */
+      }
+    }
+  </style>
 </head>
 <body>
   <main class="container" role="main">
     <h1>Petros</h1>
     <img src="IMG-20240416-WA0035.jpg" alt="Udatný Petros v boji s damenem" width="900" height="600" />
     <p>Petros je vážený bojovník v Larpu a měl by dostat pěněžní bonus ze začátku, jelikož je to velký a urputný kapitalista.</p>
+    <button class="add-button">Add</button>
   </main>
 </body>
 </html>
-
